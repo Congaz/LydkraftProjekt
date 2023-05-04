@@ -1,0 +1,58 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        script(src = "js/createProduct.js" defer)
+        title  Create Item page
+
+    body
+        h1  Create Item
+        p
+        label Name
+        input#name
+
+        p
+        label Description
+        input#description
+
+        p
+        label ProductCode
+        input#productCode
+
+        p
+        label Price
+        input#price
+        br
+        br
+
+        p
+            label Select template
+            select#selectTemplate
+                option(selected disabled hidden) Choose a Template type.
+                each template in templateNames
+                    option(id = template.templateName inp = template.attributes) #{template.templateName}
+                    br
+
+        label Edit Attributes
+        ul#inpAttributes
+
+        label Item Image upload
+        p Click on the "Choose File" button to upload a file:
+        div
+            form(method='post', enctype='multipart/form-data')
+                //input(type='file', name='imageupload')
+                //input(type='submit', name='uploadimage', value='Upload Image')
+
+        div
+            button#createBtn Create item
+            button#cancelBtn Cancel
+        br
+
+        label Overview
+        ul#listItemOverview
+
+
+          //  form(action = "/action_page.jpg")
+                         input(type = 'file', id = 'myFile')
+                         input(type = 'submit')
+

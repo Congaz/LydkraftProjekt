@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title inventoryView
+        script(src = "/js/InventoryView/inventory.js" defer)
+        link(rel="stylesheet" href="css/inventoryView.css")
+        body
+            h1  Inventory
+            container
+                table
+                    tr
+                        ol
+                            each cmp in components
+                                li #{cmp.className}
+
+                                  if cmp.className === 'Group'
+                                      h2 #{cmp.name}
+

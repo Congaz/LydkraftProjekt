@@ -1,0 +1,219 @@
+/*** Group ************************************************************************************************************/
+
+/**
+Group wrapper.
+Element that holds groupContainer and groupComponentsContainer.
+ */
+#sidebar .groupWrapper {
+    background-color: #aaaaaa;
+    user-select: none;
+}
+
+/**
+Group container.
+Holds elements that displays information about group.
+*/
+#sidebar .group {
+    display: flex;
+    position: relative;
+    min-height: 50px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 35px;
+    border-bottom: 1px solid black;
+    font-size: 16px; /* Default font size for Groups */
+    cursor: pointer;
+}
+
+/**
+Set font-size of group according to group level (relative to group font-size).
+ */
+#sidebar .group.levelIdx_0 {
+    font-size: 1.50em;
+}
+
+#sidebar .group.levelIdx_1 {
+    font-size: 1.40em;
+}
+
+#sidebar .group.levelIdx_2 {
+    font-size: 1.30em;
+}
+
+#sidebar .group.levelIdx_3 {
+    font-size: 1.20em;
+}
+
+#sidebar .group.levelIdx_infinte {
+    font-size: 1.10em;
+}
+
+
+/**
+Group name
+*/
+#sidebar .groupName {
+    font-weight: bold;
+}
+
+/**
+Triangle symbol that indicates groups open/closed state.
+ */
+#sidebar .groupTriangle {
+    position: absolute;
+    right: 15px;
+    font-size: 75%;
+    transform: rotate(90deg);
+    transition: transform 200ms ease 0ms;
+}
+
+#sidebar .groupTriangle.open {
+    transform: rotate(0deg);
+}
+
+/**
+Group components container.
+Holds component members of group.
+ */
+#sidebar .groupContent {
+    position: static;
+    padding-left: 15px;
+    /* Element is hidden as default */
+    max-height: 0px;
+    overflow: hidden;
+    /* We use max-height to transition between displayed/hidden state */
+    transition: max-height 250ms ease-in-out 0ms;
+}
+
+
+/*** Rack *************************************************************************************************************/
+
+#sidebar .rack {
+
+}
+
+/**** Item ************************************************************************************************************/
+
+/**
+Item container.
+*/
+#sidebar .item {
+    background-color: #cccccc;
+    border-bottom: 1px solid black;
+    padding: 5px 0 0 10px;
+
+}
+
+/**
+Item name.
+*/
+#sidebar .itemName {
+    /*background-color: aquamarine;*/
+    text-align: left;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+/**
+Contains attributes and actions.
+ */
+#sidebar .item .lowerContainer {
+    /*background-color: darkgreen;*/
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: auto 90px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "attributes actions"
+}
+
+/* --- Attributes ---------- */
+
+/**
+Attributes container.
+ */
+#sidebar .item .attributesContainer {
+    /*background-color: magenta;*/
+    grid-area: attributes;
+    padding: 5px 5px 5px 0px;
+    border: 0px solid #999999;
+    font-size: 0.9em;
+}
+
+/**
+Single attribute container.
+ */
+#sidebar .item .attributeRow {
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: row;
+    font-weight: normal;
+}
+
+/**
+Attribute name.
+ */
+#sidebar .item .attributeRow .name {
+    /*background-color: mediumslateblue;*/
+    width: 40%;
+    min-width: 100px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+/**
+Attribute value.
+ */
+#sidebar .item .attributeRow .value {
+    /*background-color: chocolate;*/
+    text-align: left;
+}
+
+/**
+Attribute unit.
+ */
+#sidebar .item .attributeRow .unit {
+    /*background-color: darkgreen;*/
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+/* --- Actions ----------- */
+#sidebar .item .actions {
+    /*background-color: #007da4;*/
+    grid-area: actions;
+    height: fit-content;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 7px;
+    border: 1px solid #999999;
+}
+
+#sidebar .item .addNumber {
+    width: 100%;
+    padding: 5px;
+}
+
+/**
+Always display spindle.
+ */
+#sidebar .item .addNumber::-webkit-inner-spin-button,
+#sidebar .item .addNumber::-webkit-outer-spin-button {
+   opacity: 1;
+}
+
+#sidebar .item .addButton {
+    /*background-color: chartreuse;*/
+    width: 100%;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+
+
+

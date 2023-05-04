@@ -1,0 +1,28 @@
+*{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-size: 80px;
+    
+}
+h1{
+    color: darkslategrey;
+}
+
+body{
+    text-align: center;
+}
+
+button{
+   font-size: 20px;
+    color: darkslategrey;
+    height: 50px;
+    width: 50%;
+}
+div{
+    font-size: large;
+    visibility: hidden;
+}
+td{
+    padding: 10px;
+}

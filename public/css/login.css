@@ -1,0 +1,37 @@
+
+#signupForm{
+ max-width: 250px;
+}
+
+#signupForm input {
+    margin: 5%;
+}
+
+input{
+    display: block;
+}
+
+.accout-info {
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+.accout-action {
+    background-color: cornflowerblue;
+}
+
+
+.subBtn {
+    background-color: dodgerblue;
+    color: mediumpurple;
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: 3px 0 0 darkblue;
+    width: 75%;
+    align-self: center;
+}
+
+.subBtn:hover {
+    background-color: deepskyblue;
+
+}

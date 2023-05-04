@@ -1,0 +1,43 @@
+
+#pageLayout {
+    /*background-color: yellow;*/
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: minmax(calc(768px - 350px), auto) minmax(350px, 26%);
+    grid-template-rows: minmax(65px, 9%) auto minmax(65px, 9%);
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+}
+
+#header {
+    background-color: #007da4;
+    grid-area: header;
+    border-bottom: 1px solid black;
+
+}
+
+#main {
+    background-color: #ffffff;
+    grid-area: main;
+    overflow-y: scroll;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background-color: #eeeeee;
+    overflow-y: scroll;
+    user-select: none;
+}
+
+#footer {
+    background-color: #007da4;
+    grid-area: footer;
+    padding-top: 5px;
+    border-top: 1px solid black;
+}
+
+

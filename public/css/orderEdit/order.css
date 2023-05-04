@@ -1,0 +1,80 @@
+#main h1 {
+    background-color: hotpink;
+}
+
+#orderDiv {
+    background-color: #dddddd;
+    width: 100%;
+}
+
+#lineDiv {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+#prisDiv {
+    height: 10%;
+    width: 100%;
+}
+
+.orderline {
+    padding: 5px 0px;
+}
+
+.ordreIndputs {
+    margin: 3px;
+    width: 50px;
+}
+
+.lineLabel {
+    display: inline-block;
+    width: 25%;
+}
+
+.addBut {
+    width : 50px;
+    height : 25px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.removeBut {
+    width : 50px;
+    height : 25px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.deleteBut {
+    width : 25px;
+    height : 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    padding-left: 7px;
+}
+
+.orderline {
+    border-bottom: hotpink dashed 2px;
+}
+
+
+.createBut {
+    background-color: hotpink;
+    margin: 5px 0 0 40px;
+    padding: 5px;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.createBut:hover {
+    background-color: deeppink;
+}
+
+.totalLabels {
+    margin: 0 5px 0 20px;
+}
+
+

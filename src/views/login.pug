@@ -1,0 +1,17 @@
+doctype  html
+html
+    head
+        title Order View
+        meta(charset ="UTF-8")
+        link(rel="stylesheet" type="text/css" href="css/login.css")
+    body
+        form(id="signupForm" action="http://localhost:7666/userValidation" method="post")
+            fieldset(class="accout-info")
+                label Username
+                    input(type="text" name="userName" id="userName" required)
+                label Password
+                    input(type="password" name="password" id="password" required)
+            fieldset(class="accout-action")
+                input(class="subBtn" type="submit" name="submit" value="Signup")
+
+
